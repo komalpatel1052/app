@@ -20,7 +20,7 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-purple-400/50 shadow-2xl">
             <img 
-              src="/src/photo/images.jpg" 
+              src="/profile-image.jpg" 
               alt="Komal Kumari - Aspiring Software Engineer" 
               className="w-full h-full object-cover"
               onError={(e) => {
