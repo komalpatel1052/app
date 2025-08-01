@@ -20,19 +20,19 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-purple-400/50 shadow-2xl">
             <img 
-              src="/profile-image.jpg" 
-              alt="Komal Kumari - Aspiring Software Engineer" 
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                // Fallback to initials if image fails to load
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                const parent = target.parentElement;
-                if (parent) {
-                  parent.innerHTML = '<div class="w-full h-full bg-gradient-to-r from-purple-400 to-pink-400 flex items-center justify-center text-white text-4xl font-bold">KK</div>';
-                }
-              }}
-            />
+  src="/images.jpg" 
+  alt="Komal Kumari - Aspiring Software Engineer" 
+  className="w-full h-full object-cover"
+  onError={(e) => {
+    // Fallback to initials if image fails to load
+    const target = e.target as HTMLImageElement;
+    target.style.display = 'none';
+    const parent = target.parentElement;
+    if (parent) {
+      parent.innerHTML = '<div class="w-full h-full bg-gradient-to-r from-purple-400 to-pink-400 flex items-center justify-center text-white text-4xl font-bold">KK</div>';
+    }
+  }}
+/>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
